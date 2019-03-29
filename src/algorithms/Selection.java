@@ -21,7 +21,6 @@ public class Selection extends SortAlgorithms {
 
     public static void main(String[] args) {
         Selection selection = new Selection();
-        Integer[] arr = new Integer[]{7, 2, 9, 11, 24, 53, 12, 5};
-        selection.run(arr);
+        selection.run(Utils.randomArrays(1000));
     }
 }
