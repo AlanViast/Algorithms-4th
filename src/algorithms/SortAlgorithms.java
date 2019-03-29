@@ -20,7 +20,8 @@ public abstract class SortAlgorithms {
         arr[y] = temp;
 
         System.out.println("--------------交换位置--------------");
-        System.out.println(String.format("交换了 %d, %d的位置", i, y));
+        System.out.println(String.format("交换了 %d, %d的位置, 元素: %s, %s", i, y, arr[i], arr[y]));
+
         show(arr);
     }
 

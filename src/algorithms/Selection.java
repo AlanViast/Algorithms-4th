@@ -1,5 +1,8 @@
 package algorithms;
 
+/**
+ * 选择排序: 循环整个数组, 再和它后面的所有元素比较, 找到最小的元素并交换它们的位置
+ */
 public class Selection extends SortAlgorithms {
 
     @Override
