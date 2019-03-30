@@ -14,7 +14,8 @@ public abstract class SortAlgorithms {
         sort(arr);
         sortTime = (System.nanoTime() - startTime) / 1000;
         assert isSorted(arr);
-        show(arr);
+        // show(arr);
+        statistics();
     }
 
     public abstract void sort(Comparable[] arr);
@@ -37,11 +38,14 @@ public abstract class SortAlgorithms {
 
     }
 
-    protected void show(Comparable[] arr) {
+    protected void statistics() {
         System.out.println(String.format("------------------[%s]------------------", this.getClass().toString()));
-        System.out.println(Arrays.toString(arr));
         System.out.printf("执行时间: %s/ms, 交换次数: %d, 计算次数: %d", sortTime, exchCount, comparaCount);
         System.out.println();
+    }
+
+    protected void show(Comparable[] arr) {
+        System.out.println(Arrays.toString(arr));
     }
 
     protected boolean isSorted(Comparable[] arr) {
