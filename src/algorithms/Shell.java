@@ -47,7 +47,7 @@ public class Shell extends SortAlgorithms {
     }
 
     public static void main(String[] args) {
-        Comparable[] arr = Utils.randomArrays(1000);
+        Comparable[] arr = Utils.randomArrays(100000);
         Selection selection = new Selection();
         selection.run(arr.clone());
 
@@ -59,6 +59,9 @@ public class Shell extends SortAlgorithms {
 
         Merge merge = new Merge();
         merge.run(arr.clone());
+
+        MergeBu mergeBu = new MergeBu();
+        mergeBu.run(arr.clone());
     }
 
 
