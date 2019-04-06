@@ -22,7 +22,6 @@ public class Quick extends SortAlgorithms {
 
 
     private void sort(Comparable[] arr, int lo, int hi) {
-        System.out.printf("lo: %s, hi: %s\n", lo, hi);
         if (hi <= lo) {
             return;
         }

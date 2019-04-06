@@ -18,4 +18,18 @@ public class Utils {
         System.out.println(Arrays.toString(randomArrays(20)));
     }
 
+    /**
+     * 合并两个数组到一个新的数组
+     *
+     * @param arr1 数组1
+     * @param arr2 数组2
+     * @return 合并后的数组
+     */
+    public static Comparable[] concat(Comparable[] arr1, Comparable[] arr2) {
+        Comparable[] comparables = new Comparable[arr1.length + arr2.length];
+
+        System.arraycopy(arr1, 0, comparables, 0, arr1.length);
+        System.arraycopy(arr2, 0, comparables, arr1.length, arr2.length);
+        return comparables;
+    }
 }
