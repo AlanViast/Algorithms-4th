@@ -49,19 +49,7 @@ public class Shell extends SortAlgorithms {
     public static void main(String[] args) {
         Comparable[] arr = Utils.randomArrays(100000);
         Selection selection = new Selection();
-        selection.run(arr.clone());
-
-        Insertion insertion = new Insertion();
-        insertion.run(arr.clone());
-
-        Shell shell = new Shell();
-        shell.run(arr.clone());
-
-        Merge merge = new Merge();
-        merge.run(arr.clone());
-
-        MergeBu mergeBu = new MergeBu();
-        mergeBu.run(arr.clone());
+        selection.run(arr);
     }
 
 
