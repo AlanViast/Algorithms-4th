@@ -3,6 +3,8 @@ package algorithms;
 import java.util.Arrays;
 
 /**
+ * 三向切分的快速排序, [<v: =v: >v] 主要是将数组切分成三部分
+ *
  * @author AlanViast
  */
 public class Quick3way extends SortAlgorithms {
